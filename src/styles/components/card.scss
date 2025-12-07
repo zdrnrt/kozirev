@@ -1,0 +1,91 @@
+.card {
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+  background: var(--white);
+  overflow: hidden;
+
+  &__description {
+    padding: 24px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 150%;
+    color: var(--gray-900);
+  }
+}
+
+.card-preview {
+  aspect-ratio: 1.625;
+  line-height: 0;
+
+  &__pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.tag {
+  display: inline-block;
+  padding: 1px 8px;
+  font-size: 1.75rem;
+  line-height: 150%;
+  color: var(--white);
+  text-align: center;
+  border-radius: 4px;
+
+  &--marketing {
+    background-color: var(--success);
+  }
+
+  &--management {
+    background: var(--info);
+  }
+
+  &--hr {
+    background: var(--warning);
+  }
+
+  &--design {
+    background: var(--red);
+  }
+}
+
+.card-info {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  font-size: 2.25rem;
+  line-height: 150%;
+
+  &__price {
+    color: var(--danger);
+  }
+
+  &__author {
+    position: relative;
+    color: var(--gray-700);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -9px;
+      width: 1px;
+      height: 100%;
+      background-color: currentColor;
+
+    }
+  }
+}

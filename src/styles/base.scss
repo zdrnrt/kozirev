@@ -1,3 +1,31 @@
+@use 'sass:math';
+
+:root {
+    font-size: 8px;
+}
+
 body {
     font-family: Lato, Arial, sans-serif;
+    color: var(--grey-800);
+}
+
+* {
+    box-sizing: border-box;
+    outline-color: var(--primary);
+    outline-offset: 0.25rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    padding-inline: math.div(20rem, 8);
+    max-width: 1230px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1270px) {
+        padding-inline: 0;
+    }
 }

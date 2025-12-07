@@ -1,0 +1,28 @@
+@use 'sass:math';
+
+.hero {
+  padding-block-start: 44px;
+  &--courses{
+    margin-block-end: 80px;
+  }
+  &__text {
+    margin: 0;
+    margin-block-end: 8px;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 150%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--gray-900);
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 900;
+    font-size: math.div(46rem, 8);
+    line-height: 130%;
+    color: var(--gray-900);
+    text-align: center;
+  }
+}

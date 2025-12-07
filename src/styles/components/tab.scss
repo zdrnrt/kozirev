@@ -1,0 +1,29 @@
+.tab{
+  padding: 0.625em 1.25em;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid transparent;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 160%;
+  text-align: center;
+  color: var(--gray-600);
+  border-radius: 0.5rem;
+  background-color: transparent;
+  transition: var(--transition);
+  &--active{
+    color: var(--primary);
+    border-color: var(--primary);
+    &:hover{
+      border-color: var(--grey-800);
+    }
+  }
+  &:focus-visible,
+  &:hover,
+  &:active{
+    color: var(--grey-800);
+  }
+}

@@ -1,0 +1,38 @@
+.courses{
+  padding-bottom: 80px;
+  &__controls{
+    margin-bottom: 52px;
+  }
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    gap: 30px;
+    justify-items: space-around;
+  }
+  &__item{
+    max-width: 390px;
+  }
+  &__more{
+    padding-top: 80px;
+    text-align: center;
+  }
+}
+
+.courses-controls{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  &__category{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+  }
+  &__filter{
+    flex: 1 0 auto;
+    max-width: 315px;
+  }
+}

@@ -1,2 +1,9 @@
 @use 'fonts';
-@use 'base'
+@use 'vars';
+@use 'base';
+@use './sections/hero';
+@use './sections/courses';
+@use './components/card';
+@use './components/tab';
+@use './components/control';
+@use './components/button';
