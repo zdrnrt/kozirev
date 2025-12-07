@@ -7,10 +7,13 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
     gap: 30px;
-    justify-items: space-around;
+    justify-items: center;
   }
   &__item{
     max-width: 390px;
+    &--hidden{
+      display: none;
+    }
   }
   &__more{
     padding-top: 80px;
